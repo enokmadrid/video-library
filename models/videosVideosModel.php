@@ -2,13 +2,11 @@
 
 include_once("../models/videoModel.php");
 
-class Model {
+class videosModel {
 
     //here goes some hardcore values to simulate the database
     private $db;
     private $query;
-    public $videosReturn;
-
 
     public function __construct(){
 
