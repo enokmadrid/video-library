@@ -2,7 +2,7 @@
 
 include_once("../models/videoModel.php");
 
-class videosModel {
+class Model {
 
     //here goes some hardcore values to simulate the database
     private $db;
