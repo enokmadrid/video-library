@@ -3,7 +3,7 @@
 echo '<a class="large-4 columns button radius success" href="../index.php"><-- Go Back Home</a><hr><br />';
 
     //controller
-    include_once('../controllers/videosVideosController.php');
+    include_once('../controllers/videosController.php');
     $controller = new videosController();
     $controller->invoke();
 
