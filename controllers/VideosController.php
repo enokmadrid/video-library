@@ -1,23 +1,22 @@
 <?php
 
-include_once("../models/Model.php");
+include_once("../models/DataManager.php");
 include_once("../models/VideoModel.php");
 
 class VideosController {
 
     public function __construct(){
-        $this->VideoModel = new VideoModel();
-        $this->Model = new Model();
+        $this->DataManager = new DataManager();
     }
 
     public function index() {
-        $all_videos = $this->VideoModel->all();
+        $all_videos = ViewModel::all();
         asort($all_videos)
         include "../views/videos/index.php";
     }
 
     public function show(){
-        $video = $this->VideoModel->find($_GET['id']);
+        $video = ViewModel::find($_GET['id']);
         include '../views/videos/show.php';
     }
 }
